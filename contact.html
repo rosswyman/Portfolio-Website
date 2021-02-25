@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Ross Wyman</title>
+  <link rel="shortcut icon" href="img/favicon-32x32.png">
+
+  <!-- This is the code for normalizing CSS
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  -->
+
+  <!-- This is the code for reseting CSS-->
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+
+
+<!-- Linking to fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+
+<header class="page-header">
+
+<img src="img/logo.svg" width="150px" height="150px" alt="Personal logo of Ross Wyman, two mountain peaks in a circle." class="page-header__item">
+
+  <nav class="main-navigation page-header__item">
+    <ul role="menubar" class="navigation-list">
+      <li role="presentation">
+        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+      </li>
+      <li role="presentation">
+        <a href="work.html" role="menuitem" class="navigation-list__item">My Work</a>
+      </li>
+      <li role="presentation">
+        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+      </li>
+      <li role="presentation">
+        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+  <div class="contact">
+    <h1>Contact</h1>
+    <form action="" method="post" id="contact-form">
+      <p>
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" required>
+      </p>
+
+      <p>
+        <label class="standard-label" for="contact-phone">Telephone: </label>
+        <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      </p>
+
+      <p>
+        <label class="standard-label" for="contact-message">Message: </lable>
+          <textarea maxlength="240" id="contact-message" required></textarea>
+      </p>
+
+      <input type="submit" value="Send message">
+    </form>
+
+    <div>
+      Houston, TX <br>
+      Tel: <a href="tel:+13039495984">+1 303 949 5984 </a><br>
+      Skype: <a href="skype:theuberbrit">theuberbrit</a></br>
+      <a href="mailto:ross.wyman@gmail.com">ross.wyman@gmail.com</a></br>
+      <a href="mailto:ross.wyman@gmail.com">Contact me</a>
+    </div>
+  </div>
+  <script src="js/tota11y.min.js"></script>
+</main>
+
+<footer class="page-footer">
+  <p>Find me on</p>
+  <div class="social-media">
+    <a href="https://github.com/rosswyman"><img src="img/github.svg" width="30px" height="30px" alt="GitHub Library"> </a>
+    <a href="https://linkedin.com/in/ross-wyman"><img src="img/linkedin.svg" width="30px" height="30px" alt="LinkedIn Profile"></a>
+    <a href="https://twitter.com/mtboyurbangent"><img src="img/twitter.svg" width="30px" height="30px" alt="Twitter Link"></a>
+  </div>
+</footer>
+
+
+</html>
