@@ -475,34 +475,56 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 */
 
 /*This code has been modified by me*/
-nav.main-navigation a:before, nav.main-navigation a:after
+.navigation-list__item {
+  position: relative;
+  z-index: 0;
+}
+
+/*
+.navigation-list__item:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+.navigation-list__item:hover:before
+{
+    height: 100%;
+}
+*/
+.navigation-list__item:before, .navigation-list__item:after
 {
     position: absolute;
     left: 0px;
     width: 100%;
-    height: 10px;
+    height: 2px;
     background: #FFF;
     content: "";
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-
-nav.main-navigation a:before
+.navigation-list__item:before
 {
     top: 0px;
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
 }
-
-nav.main-navigation a:after
+.navigation-list__item:after
 {
     bottom: 0px;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
 }
-
-nav.main-navigation a:hover:before, nav.main-navigation a:hover:after
+.navigation-list__item:hover:before, .navigation-list__item:hover:after
 {
     opacity: 1;
     -webkit-transform: translateY(0px);
