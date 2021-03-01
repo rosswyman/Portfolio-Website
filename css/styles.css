@@ -73,29 +73,34 @@ header {
 .navigation-list__item {
   position: relative;
   z-index: 0;
+  padding: 5px;
 }
 
 /* This code applies the top and bottom white highlights */
-.navigation-list__item:before, .navigation-list__item:after {
+.navigation-list__item::before,
+.navigation-list__item::after {
   position: absolute;
   left: 0;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: var(--link-color);
   content: "";
   opacity: 0;
   transition: all 0.3s;
 }
 
-.navigation-list__item:before {
+.navigation-list__item::before {
   top: 0;
   transform: translateY(-10px);
 }
-.navigation-list__item:after {
+
+.navigation-list__item::after {
   bottom: 0;
   transform: translateY(10px);
 }
-.navigation-list__item:hover:before, .navigation-list__item:hover:after {
+
+.navigation-list__item:hover::before,
+.navigation-list__item:hover::after {
   opacity: 1;
   transform: translateY(0);
 }
@@ -147,10 +152,8 @@ h3 {
 }
 
 .project-grid__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
 }
 
 /* Link Styling */
@@ -168,7 +171,6 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  font-weight: bold;
   transition: 0.5s font-weight;
 }
 
@@ -271,7 +273,7 @@ footer {
 /* Table Styling */
 
 th {
-  padding: 10px 10px;
+  padding: 10px;
   width: auto;
   display: table-cell;
   vertical-align: inherit;
@@ -293,7 +295,7 @@ td {
 .professional-experience {
   border-style: solid;
   border-width: 2px;
-  margin: 10px 0px 15px 10px;
+  margin: 10px 0 15px 10px;
 }
 
 /* Responsive Design */
