@@ -386,8 +386,21 @@ td {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-@keyframes shuttle-move {
-  100% { transform: translate(10px, 0); }
+@-webkit-keyframes shuttle-move {
+  100% {
+    -webkit-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+  }
 }
 
-.shuttle { animation: shuttle-move 5s infinite alternate ease; }
+@keyframes shuttle-move {
+  100% {
+    -webkit-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+  }
+}
+
+.shuttle {
+  -webkit-animation: shuttle-move 5s infinite alternate ease;
+  animation: shuttle-move 5s infinite alternate ease;
+}
