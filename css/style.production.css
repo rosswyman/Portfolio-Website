@@ -478,19 +478,17 @@ td {
 
 @-webkit-keyframes shuttle-move {
   100% {
-    -webkit-transform: translate(10px, 0);
-    transform: translate(10px, 0);
+    -webkit-transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
 }
-
 @keyframes shuttle-move {
   100% {
-    -webkit-transform: translate(10px, 0);
-    transform: translate(10px, 0);
+    -webkit-transform: translate(10px, 0px);
+    transform: translate(10px, 0px);
   }
 }
-
 .shuttle {
-  -webkit-animation: shuttle-move 5s infinite alternate ease;
-  animation: shuttle-move 5s infinite alternate ease;
+  -webkit-animation: shuttle-move 5.0s infinite alternate ease;
+  animation: shuttle-move 5.0s infinite alternate ease;
 }
